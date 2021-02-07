@@ -1,0 +1,53 @@
+.osvidetelstvovanie {
+  padding: 3rem 0;
+}
+
+.osvidetelstvovanie__p {
+  margin-bottom: 3rem;
+}
+
+.osvidetelstvovanie__row {
+  margin-bottom: 2rem;
+}
+
+.osvidetelstvovanie__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.osvidetelstvovanie__item {
+  margin-right: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.osvidetelstvovanie__item-img-wrap {
+  margin-bottom: 1rem;
+}
+
+.number {
+  font-size: 4rem;
+  color: $blue;
+  font-weight: 800;
+}
+
+.osvidetelstvovanie__number {
+  margin-bottom: 3rem;
+}
+
+.osvidetelstvovanie__img-wrap {
+  margin-bottom: 4rem;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.button_osvidetelstvovanie {
+  margin-bottom: 3rem;
+}

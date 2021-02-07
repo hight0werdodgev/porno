@@ -1,0 +1,91 @@
+.contacts {
+  background-color: $blue;
+  color: #fff;
+  padding-top: 4rem;
+  @include phone {
+    padding: 2rem 1.6rem;
+  }
+}
+
+.contacts_page {
+  padding-top: 7rem;
+  @include phone {
+    padding-top: 7rem;
+  }
+}
+
+.container_contacts {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: visible;
+  justify-content: space-around;
+}
+
+.contacts-text, .socials {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.socials {
+  display: flex;
+  padding: 4rem 0;
+  @include phone {
+    padding: 2rem 1.6rem;
+  }
+}
+
+.socials__icon {
+  margin-right: 2rem;
+  width: 2rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.contacts-text {
+  margin-bottom: 4rem;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-text__adress, .contacts-text__mail, .contacts-text__phone {
+  padding-left: 25px;
+  margin-bottom: .6rem;
+}
+
+.contacts-text__mail, .contacts-text__phone {
+  font-weight: 700;
+}
+
+.contacts-text__adress {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background: url('img/png/marker.png') center center / contain no-repeat;
+  }
+}
+
+.contacts-text__title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}

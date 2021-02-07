@@ -1,0 +1,49 @@
+.opressovka {
+  color: black;
+  padding: 4rem 0;
+  @include tablet {
+    padding: 2rem 0;
+  }
+}
+
+.container_pressovka {
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.opressovka__how-often, .opressovka__for-what {
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.opressovka__how-often-list, .opressovka__for-what-list {
+  padding-left: 0;
+}
+
+.opressovka__how-often {
+  margin-right: 4rem;
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+}
+
+.opressovka__how-often-title, .opressovka__for-what-title {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+}
+
+.opressovka__how-often-item, .opressovka__for-what-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.opressovka__how-often-img-wrap, .opressovka__for-what-img-wrap {
+  margin-right: 1rem;
+}

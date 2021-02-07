@@ -1,0 +1,72 @@
+.price {
+    padding-top: 5rem;
+    padding-bottom: 0;
+    @include phone {
+        padding: 2rem 0;
+    }
+}
+
+.price__title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 4.3rem;
+}
+
+.price__row {
+    margin-bottom: 5rem;
+    font-size: 1.1rem;
+}
+
+.price__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.price__item {
+    width: 30%;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+    list-style: none;
+    @include tablet {
+        width: 40%;
+        margin-right: 2rem;
+    }
+    @include phone {
+        width: 90%;
+        margin-right: 2rem;
+    }
+}
+
+.price_item-title {
+    font-size: 1.9rem;
+    color: $blue;
+    margin-bottom: 1rem;
+    min-height: 4.5rem;
+}
+
+.price_item-img-wrap {
+    height: 9rem;
+    width: 100%;
+}
+
+.price_item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.price_item-payback {
+    margin-bottom: 0.4rem;
+}
+
+.price_item-propan, .price_item-metan {
+    margin-bottom: 0.4rem;
+    span {
+        font-weight: 700;
+    }
+}
+
+.price_item-metan {
+    margin-bottom: 2rem;
+}

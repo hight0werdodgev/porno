@@ -1,0 +1,30 @@
+// media
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin tablets-gorizontal {
+  @media screen and (max-height: 450px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

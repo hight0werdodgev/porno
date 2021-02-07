@@ -1,0 +1,33 @@
+.certificates {
+  background-color: #C6C7CC;
+  padding-top: 2.4rem;
+}
+
+.certificates__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.certificates__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.certificates__item {
+  width: 20%;
+  list-style: none;
+  margin-right: 2rem;
+  @include tablet {
+    width: 35%;
+  }
+
+}
+
+.certificates .certificates__img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  min-width: auto;
+
+}

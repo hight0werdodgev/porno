@@ -1,0 +1,47 @@
+/*section home */
+.home {
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  background-color: #212121;
+  padding-top: 4rem;
+  position: relative;
+  overflow: visible;
+  .btn {
+    @include phone {
+      font-size: .8rem;
+    }
+  }
+}
+
+.home__video{
+  z-index:1;
+  min-width:100%;
+  padding: 0;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.home__title_wrap {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: fit-content;
+  opacity: 1;
+  z-index: 100;
+  transform: translate(-50%, 0);
+  text-align: center;
+  @include tablet {
+    top: 40%;
+  }
+}
+
+.home__title {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  @include phone {
+    font-size: 1.5rem;
+  }
+}

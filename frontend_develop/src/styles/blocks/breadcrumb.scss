@@ -1,0 +1,28 @@
+
+.breadcrumb {
+  //padding-top: 4rem;
+  //нужно для новогодней гирлянды
+  padding-top: 7rem;
+  display: flex;
+  margin-bottom: 4rem;
+  font-size: 0.9rem;
+  padding-left: 0;
+}
+.breadcrumb a {
+  color: #0b72b8;
+  color: #f9aa42;
+  border-bottom: 1px solid #f9aa42;
+}
+.breadcrumb li {
+  margin-right: .2rem;
+  list-style: none;
+}
+.breadcrumb li:after {
+  content: "/";
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+}
+.breadcrumb li:last-child:after {
+  content: "";
+}

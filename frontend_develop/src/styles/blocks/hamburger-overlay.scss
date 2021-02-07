@@ -1,0 +1,113 @@
+.hamburger-menu {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    z-index: 11023341;
+    flex-direction: column;
+    position: fixed;
+    top: 100rem;
+    left: 0;
+    padding-top: 3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+   .container {
+     overflow-y: scroll;
+     overflow-x: hidden;
+     &::-webkit-scrollbar {
+       visibility: hidden;
+       width: 0px;
+     }
+   }
+
+
+    .nav-wrap {
+      margin: 0 auto;
+      font-size: 1.4rem;
+    }
+    .nav--hamburger-menu {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-left: 0;
+      .nav__item {
+        list-style: none;
+      }
+    }
+    .phone-wrapper_hambuger {
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+    .phone {
+      margin-bottom: 1rem;
+    }
+    .logo {
+      height: 5rem;
+      width: auto;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  
+
+  .hamburger-menu-link-close {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .header--hamburger-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  
+  .container--hamburger-menu {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+    .hamburger-menu-badge--open {
+        width: 1.6rem;
+        height: 0.3rem;
+        background: #ffffff;
+        position: relative;
+        border-radius: 25%;
+        display: none;
+      transform: rotate(45deg);
+  
+        @include tablet {
+            display: flex;
+          }
+        @include phone {
+            display: flex;
+        }
+    &:hover {
+      background: rgb(172, 170, 170);
+      &:after, &:before {
+        background: rgb(172, 170, 170);
+      }
+    }
+  
+    &:after, &:before {
+      content: '';
+      display: block;
+      width: 1.6rem;
+      height: 0.3rem;
+      background: #ffffff;
+      position: absolute;
+      border-radius: 25%;
+  
+    }
+  
+    &::after {
+      top: -100%;
+      margin-top: 0.3rem;
+      transform: rotate(90deg);
+    }
+  }
+

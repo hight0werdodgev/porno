@@ -1,0 +1,156 @@
+.calculator {
+	font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+	color: #1F82BC;
+}
+
+select {
+	border: 2px solid #1F82BC;
+	border-radius: 5px;
+	min-height: 30px;
+	font-size: 16px;
+	background: #fff;
+}
+
+label:hover {
+	color: #e77116;
+	cursor: pointer;
+}
+
+hr {
+	border-top: 1px solid gray
+}
+
+.accent {
+	color: #e77116
+}
+
+.subaccnet {
+	color: #1F82BC;
+}
+
+.calculator__subtitle {
+	margin: 1.5rem 0;
+}
+
+
+
+.gaztype__img--propan {
+	background: url(../img/png/1.png) no-repeat center center;
+	height: 60px;
+	width: 100%;
+	background-position: 0 0;
+}
+
+
+.gaztype__title {
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+
+.gaztype__img--metan {
+	background: url(../img/png/2.png) no-repeat center center;
+	height: 60px;
+	width: 120px;
+	background-position: 0 0;
+}
+
+#metan:checked + label .label__metan .gaztype__img--metan{
+	background-position: 0 100%;
+}
+
+.reful__img--1 {
+	background: url(../img/png/5.png) no-repeat center center;
+	height: 60px;
+	width: 120px;
+	background-position: 0 0;
+}
+
+#reful1:checked + label .label__reful .reful__img--1{
+	background-position: 0 100%;
+}
+
+.reful__img--2 {
+	background: url(../img/png/4.png) no-repeat center center;
+	height: 60px;
+	width: 120px;
+	background-position: 0 0;
+}
+
+#reful2:checked + label .label__reful .reful__img--2{
+	background-position: 0 100%;
+}
+
+.reful__img--3 {
+	background: url(../img/png/3.png) no-repeat center center;
+	height: 60px;
+	width: 120px;
+	background-position: 0 0;
+}
+
+#reful3:checked + label .label__reful .reful__img--3{
+	background-position: 0 97%;
+}
+
+.reful__img--4 {
+	background: url(../img/png/6.png) no-repeat center center;
+	height: 60px;
+	width: 120px;
+	background-position: 0 0;
+}
+
+.refuiling__title {
+	text-align: center;
+	margin-top: 15px;
+}
+
+#reful4:checked + label .label__reful .reful__img--4{
+	background-position: 0 80%;
+}
+
+#metan:checked + label{
+	color: #1F82BC;
+}
+
+#propan:checked + label .label__propan .gaztype__img--propan{
+	background-position: 0% 100%;
+}
+
+.label__reful {
+	margin: 20px 0;
+}
+
+#propan:checked + label{
+	color: #1F82BC;
+}
+
+#metan {
+	display: none;
+}
+
+#propan {
+	display: none;
+}
+
+#reful1 {
+	display: none;
+}
+
+#reful2 {
+	display: none;
+}
+
+#reful3 {
+	display: none;
+}
+
+#reful4 {
+	display: none;
+}
+
+input:checked + label {
+	color: #1F82BC;
+}

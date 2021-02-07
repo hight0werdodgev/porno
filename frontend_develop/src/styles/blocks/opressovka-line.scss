@@ -1,0 +1,36 @@
+.opressovka-line {
+  background-color: #212121;
+  color: white;
+  padding: 4rem 0;
+
+  .line__item {
+    margin-right: 1rem;
+  }
+}
+
+.line_opressovka__title {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  z-index: 123;
+}
+
+.opressovka-line .line__list {
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    margin: 0 0 0 60px;
+    display: block;
+  }
+}
+
+.line_opressovka__time {
+  font-size: 3rem;
+}
+
+.line_opressovka__hour {
+  margin-bottom: 3rem;
+}
+
+.line_opressovka__row {
+  margin-bottom: 5rem;
+}

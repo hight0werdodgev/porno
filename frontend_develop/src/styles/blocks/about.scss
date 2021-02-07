@@ -1,0 +1,59 @@
+.about {
+  background: #212121;
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  line-height: 1.4;
+  font-weight: 400;
+  @include phone {
+    padding: 2rem 0;
+  }
+}
+
+.container_about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__description {
+  width: 44%;
+  margin-right: 12%;
+
+  @include tablet {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+}
+
+.about__description-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.about__description-text {
+  margin-bottom: 3rem;
+}
+
+.about__description {
+  width: 44%;
+
+  a {
+    color: $orange;
+  }
+}
+
+.about__description_video {
+  width: 44%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.about__video {
+  width: 100%;
+  object-fit: contain;
+}
+
+.ytp-large-play-button {
+  top: 75%;
+}

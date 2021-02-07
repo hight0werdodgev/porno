@@ -1,0 +1,10 @@
+.obslushivanie-price {
+  padding-top: 4rem;
+  @include phone {
+    padding-top: 2rem;
+  }
+}
+
+.obslushivanie-price__p {
+  margin-bottom: 3rem;
+}

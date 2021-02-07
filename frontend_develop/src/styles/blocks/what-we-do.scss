@@ -1,0 +1,16 @@
+.what-we-do {
+    padding: 4rem 0;
+  font-weight: 400;
+  @include tablet {
+    padding: 2rem 0;
+  }
+  }
+
+  .what-we-do__title {
+    font-size: 3rem;
+    margin-bottom: 2.7rem;
+    font-weight: 700;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }

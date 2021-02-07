@@ -1,0 +1,22 @@
+.demand {
+  padding: 4rem 0;
+
+  .container {
+    overflow: visible;
+  }
+}
+
+.demand__p {
+  z-index: 100;
+  position: relative;
+  &:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    top: -3rem;
+    left: -4%;
+    background: url("img/png/demand.png")  center center / contain no-repeat;
+  }
+}

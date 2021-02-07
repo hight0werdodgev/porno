@@ -1,0 +1,68 @@
+.komlektuyshie-item {
+  padding: 4rem 0;
+  @include phone {
+    padding: 0;
+  }
+}
+
+.komlektuyshie-item__wrap {
+  display: flex;
+  margin-bottom: 4rem;
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.komlektuyshie-item__img-wrap {
+  margin-right: 10rem;
+  flex: 1;
+  @include tablet {
+    margin-right: 2rem;
+  }
+  @include phone {
+    margin-bottom: 2rem;
+  }
+}
+
+.komlektuyshie-item__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+.btn_komlektuyshie-item {
+  width: fit-content;
+}
+
+.komlektuyshie-item__desc {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.komlektuyshie-item__desc-text {
+  margin-bottom: 2rem;
+}
+
+.komlektuyshie-item__desc-price {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: $blue;
+}
+
+.komlektuyshie-item__wrap-block-title {
+  margin-bottom: 2rem;
+
+}
+
+.komlektuyshie-item__wrap-bloc-list {
+}
+
+.komlektuyshie-item__wrap-bloc {
+  margin-bottom: 1rem;
+  list-style: disc inside;
+
+}

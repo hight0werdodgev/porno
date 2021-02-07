@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  padding: 4rem 0;
+}
+
+.socials__icon {
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

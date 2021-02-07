@@ -1,0 +1,55 @@
+.process {
+  background: #1d1d1d;
+  color: white;
+  padding: 3rem 0;
+
+  .line__list .line__item:last-child:before {
+    background: #1d1d1d;
+    height: 6rem;
+  }
+  .line__list:before {
+    border-top: 1px solid #2283be;
+    @include tablet {
+      border-left: 1px solid #2283be;
+      border-top: none;
+    }
+  }
+  .line__item:after {
+    background-color: #2283be;
+  }
+}
+
+.process__title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.process__row {
+  margin-bottom: 2rem;
+}
+
+.process__title-row {
+  font-size: 1.5rem;
+}
+
+.process-air {
+  .line__list .line__item:last-child:before {
+    background: #1d1d1d;
+    height: 6rem;
+  }
+
+  .line__list:before {
+    border-top: 1px solid #f59e33;
+    @include tablet {
+      border-left: 1px solid #f59e33;
+      border-top: none;
+    }
+  }
+  .line__item:after {
+    background-color: #f59e33;
+  }
+}
+
+.process__p {
+  margin-bottom: 3rem;
+}

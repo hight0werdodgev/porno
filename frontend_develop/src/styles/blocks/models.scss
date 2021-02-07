@@ -1,0 +1,41 @@
+.models {
+  min-height: 80vh;
+  img {
+    padding-bottom: .9rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.models__title {
+  margin-bottom: 2rem;
+}
+
+.models__list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.models__item {
+  list-style: none;
+  width: 19%;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  @include tablet {
+    width: 45%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  @include phone {
+    width: 100%;
+  }
+}
+
+.models__link {
+  display: flex;
+  flex-direction: column-reverse;
+}

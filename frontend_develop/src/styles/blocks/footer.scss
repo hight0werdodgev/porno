@@ -1,0 +1,86 @@
+.footer {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #000000;
+    font-size: 0.9rem;
+    color: #828282;
+    a {
+        color: #828282;
+        font-weight: 200;
+        &:hover {
+            color: $blue
+        }
+    }
+    @include phone {
+        text-align: center;
+    }
+
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include laptop {
+        flex-direction: column;
+      }
+}
+
+.footer__logo {
+    margin-right: 3rem;
+    @include laptop {
+        margin-bottom: 1rem;
+      }
+    @include tablet {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.footer__logo-additional-info {
+    width: 12rem;
+    font-size: 12px;
+    @include tablet {
+        width: auto;
+    }
+}
+
+.footer__nav-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 3rem;
+    @include laptop {
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.footer__nav-list {
+    margin-right: 1rem;
+    padding-left: 0;
+    flex: 1;
+    @include phone {
+        margin: 0;
+    }
+}
+
+.footer__nav-item {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+.footer__smartbit {
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.footer__smartbit-row {
+    font-size: .98rem;
+}

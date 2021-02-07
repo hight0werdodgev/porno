@@ -1,0 +1,35 @@
+.if {
+  padding: 4rem 0;
+  background: url('img/jpg/bg/if.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @include tablet {
+    padding: 2rem 0;
+  }
+}
+
+.if__title {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  width: 50%;
+}
+
+.if__list {
+  margin-bottom: 3rem;
+  width: 50%;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.if_item {
+  list-style: disc;
+  margin-bottom: 2rem;
+}
+
+.if__p {
+  margin-bottom: 3rem;
+  width: 50%;
+}

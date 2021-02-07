@@ -1,0 +1,34 @@
+.balloni {
+  background-color: #bfbfbf;
+  padding: 4rem 0;
+  @include phone {
+    padding: 2rem;
+  }
+}
+
+.balloni__row {
+  margin-bottom: 3rem;
+}
+
+.balloni__list {
+  display: flex;
+  margin-bottom: 4rem;
+  @include phone {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.balloni__item {
+  margin-right: 3rem;
+  width: 30%;
+  text-align: center;
+  list-style: none;
+  @include phone {
+    margin-bottom: 2rem;
+  }
+}
+
+.balloni__item-img-wrap {
+  margin-bottom: 1.5rem;
+}

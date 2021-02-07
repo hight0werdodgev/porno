@@ -1,0 +1,153 @@
+.line {
+  padding: 4rem 0;
+  background-color: #212121;
+  color: #ffffff;
+  @include tablet {
+    padding: 2rem 0;
+  }
+}
+
+.line_opressovka {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  .title {
+    margin-bottom: 6rem;
+  }
+}
+
+.container_line {
+  overflow: visible;
+  @include tablet {
+    width: 80% !important;
+  }
+}
+
+.line__list {
+  display: flex;
+  list-style-type: none;
+  counter-reset: num;
+  position: relative;
+  margin: 60px 0 0 0;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+
+  @include tablet {
+    margin: 0 0 0 60px;
+    display: block;
+  }
+}
+
+.line__item {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 0;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+  margin-right: 6rem;
+  z-index: 123;
+  width: 30%;
+  @include tablet {
+    width: 100%;
+  }
+
+  @include laptop {
+    margin-right: 4rem;
+  }
+}
+
+//пунктик
+.line__item:after {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  line-height: 28px;
+  background-color: #f59e32;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -45px;
+    width: 2rem;
+    height: 2rem;
+    line-height: 28px;
+    background-color: #f59e32;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+
+}
+
+/* Вертикальная линия */
+.line__list:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #f59e32;
+  @include tablet {
+    border-left: 1px solid #f59e32;
+    border-top: none;
+    top: 15px;
+    left: -30px;
+  }
+}
+/* Скрытие линии у последнего li */
+.line__list .line__item:last-child:before {
+  top: -70%;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  /* bottom: 100%; */
+  left: 13%;
+  width: 51rem;
+  width: 21rem;
+  height: 7rem;
+  background: #212121;
+  z-index: -1;
+
+
+  @include tablet {
+    top: 0;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    /* bottom: 100%; */
+    left: -5rem;
+    width: 5rem;
+    height: 10rem;
+    background: #212121;
+  }
+
+}
+
+
+.line_obslushivanie {
+  .line__item:last-child:before {
+    @include tablet {
+
+      height: 6rem;
+
+    }
+  }
+}
+

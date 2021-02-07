@@ -1,0 +1,31 @@
+.price-register {
+  padding: 4rem 0;
+  @include tablet {
+    padding: 2rem 0;
+  }
+  .container {
+    overflow: visible;
+  }
+}
+
+.price-register__title {
+  font-size:  3rem;
+  margin-bottom: 4rem;
+}
+
+.price-register__number {
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  &:before {
+    z-index: 32;
+    position: absolute;
+    content: "";
+    width: 8rem;
+    height: 1rem;
+    top: 100%;
+    left: 0;
+    background-color: #212121;
+    background: url("img/png/price-register.png")  center center / contain no-repeat;
+  }
+}

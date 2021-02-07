@@ -1,0 +1,45 @@
+.profit {
+    padding-top: 7rem;
+    padding-bottom: 5.6rem;
+    @include phone {
+        padding: 2rem 0;
+    }
+}
+
+.profit__title {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+
+.profit__wrap {
+    display: flex;
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.profit__column-text {
+    margin-right: 3rem;
+}
+
+.profit__column-text-title {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    min-height: 80px;
+}
+
+.profit__column-text-description {
+    margin-bottom: 1rem;
+    min-height: 130px;
+    @include tablet {
+        min-height: auto;
+    }
+}
+
+.profit__description-img-wrap {
+    padding: 0.5rem;
+    @media(max-width: 900px) {
+        display: none;
+    }
+}

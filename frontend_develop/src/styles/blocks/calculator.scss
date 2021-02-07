@@ -1,0 +1,226 @@
+.calculator {
+  padding: 4rem 0;
+  font-weight: 400;
+  @include phone {
+    padding: 2rem 0;
+  }
+  .btn {
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(90deg, #e27926, #e77116);
+    border-radius: 7px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    border: 2px solid transparent;
+    &:hover {
+      background: #ffffff;
+      color: #000;
+      border: 2px solid #d9792c;
+    }
+  }
+
+  }
+
+.my-5 {
+  margin-top: 7rem !important;
+}
+
+.calculator__title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.slidecontainer{
+  max-width: 940px;
+}
+
+.gas-oil {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  h4{
+    margin-bottom: 2rem;
+  }
+}
+
+.type-oil-item,
+.type-gas-item{
+  display: inline-block;
+}
+
+.gas-oil input {
+  background-position: 0 0;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-size: cover!important;
+}
+
+.gas-oil label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+.probeg-km {
+  margin-bottom: 2rem;
+}
+
+/* калькулятор пропан */
+
+.type-gas-propan input{
+  background: url(img/png/propane.png) no-repeat;
+  background-position: 0 0;
+  width: 100px;
+  height: 138px;
+  outline: none;
+  border-radius: unset;
+  &:checked{
+    background-position: 100% 0;
+    //border: 3px solid $blue;
+  }
+}
+
+/* калькулятор метан */
+
+.type-gas-metan input{
+  background: url(img/png/metan.png) no-repeat;
+  background-position: 0 0;
+  width: 100px;
+  height: 137px;
+  outline: none;
+  border-radius: unset;
+  &:checked{
+    background-position: 100% 0;
+    //border: 3px solid $blue;
+  }
+}
+
+/* калькулятор бензин 92 */
+
+
+.type-oil-92 input{
+  background: url(img/png/92.png) no-repeat;
+  background-position: 0 0;
+  width: 107px;
+  height: 128px;
+  outline: none;
+  border-radius: unset;
+  &:checked{
+    background-position: 100% 0;
+    //border: 3px solid $blue;
+  }
+}
+
+/* калькулятор бензин 95 */
+
+.type-oil-95 input{
+  background: url(img/png/95.png) no-repeat;
+  background-position: 0 0;
+  width: 107px;
+  height: 128px;
+  outline: none;
+  border-radius: unset;
+  &:checked{
+    background-position: 100% 0;
+    //border: 3px solid $blue;
+  }
+}
+.type-gas {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.rashod-litr {
+  margin-bottom: 3rem;
+}
+
+/* калькулятор бензин 98 */
+
+.type-oil-98 input{
+  background: url(img/png/98.png) no-repeat;
+  background-position: 0 0;
+  width: 107px;
+  height: 128px;
+  outline: none;
+  border-radius: unset;
+  &:checked{
+    background-position: 100% 0;
+    //border: 3px solid $blue;
+  }
+}
+
+.rashod-litr input,
+.probeg-km input{
+  width: 100%;
+}
+
+//input[type=range]::-webkit-slider-thumb {
+//  background: #3487BF!important;
+//  border: 2.5px solid $blue!important;
+//  color: $blue!important;
+//  cursor: pointer;
+//}
+
+.btn {
+  margin-bottom: 3rem;
+}
+
+.calculator__itog {
+  font-size: 1.5rem;
+  display: flex;
+  @include tablet {
+    font-size: 1.1rem;
+  }
+}
+
+.calculator__itog-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  align-items: baseline;
+}
+
+.result {
+  font-size: 1.5rem;
+  color: $blue;
+  @include tablet {
+    font-size: 1.3rem;
+  }
+}
+
+//input[type=range]::-webkit-slider-runnable-track {
+//  //background: $blue;
+//}
+//
+//input[type=range]::-webkit-slider-runnable-track {
+//  height: 5px;
+//}
+
+//input[type=range]::-webkit-slider-thumb {
+//  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+//  border: 0px solid #000000;
+//  height: 5px;
+//  width: 390px;
+//  border-radius: 7px;
+//  background: #65001c;
+//  cursor: pointer;
+//  -webkit-appearance: none;
+//  margin-top: -5.6px;
+//}
+//
+//
+//input[type=range]::-ms-fill-lower {
+//  background-color: #e0141d;
+//}
+//input[type=range]::-moz-range-progress {
+//  background-color: #e01333;
+//}
+

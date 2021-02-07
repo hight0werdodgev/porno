@@ -1,0 +1,37 @@
+
+.brand {
+  color: #0a0a0a;
+  font-family: 'Manrope', sans-serif;
+  padding-bottom: 4rem;
+}
+.brand__title {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+.brand__item-link {
+  color: dodgerblue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.brand__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  width: 70%;
+  padding-left: 0;
+  @include tablet {
+    width: 100%;
+  }
+}
+.brand__item {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.count {
+  display: inline-block;
+  opacity: .8;
+}
+
